@@ -17,6 +17,22 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.clojure/java.jdbc -->
+		<dependency>
+			<groupId>org.clojure</groupId>
+			<artifactId>java.jdbc</artifactId>
+			<version>0.7.12</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.jpa.jpql -->
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa.jpql</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.jboss.weld.servlet</groupId>
 			<artifactId>weld-servlet</artifactId>
