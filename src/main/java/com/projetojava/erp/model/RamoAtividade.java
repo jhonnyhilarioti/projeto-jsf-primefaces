@@ -8,21 +8,22 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "ramo_atividade")
-public class RamoAtividade implements Serializable{
+public class RamoAtividade implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
-	
+	private Long id;
+
 	@Column(nullable = false, length = 80)
 	private String descricao;
-	
+
 	@Override
 	public String toString() {
 		return "RamoAtividade [id=" + id + ", descricao=" + descricao + "]";
@@ -45,11 +46,11 @@ public class RamoAtividade implements Serializable{
 		return id == other.id;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -60,6 +61,4 @@ public class RamoAtividade implements Serializable{
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
-	
 }
